@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web.zip">
+    <link rel="stylesheet" href="/source/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    <title>Login I Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <img src="/source/style/logo.png" class="rounded-circle" href="#" width="50px" hspace="10px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Página Principal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="figma.html">Sua Conta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            </li>    
+            </ul>
+        </div>  
+        </nav>
+        <br>
+    </header>
+
+    <script>
+        alert("Bem vindos ao nosso primeiro site!")
+    </script>
+    <h1>Keyzinha</h1>
+    <div class="content">
+        <aside>
+           <img class="logoLoguin" src="/source/style/logo.png" alt="">
+        </aside>
+        <main>
+            <header>
+                <h2>Faça seu cadastro conosco!</h2>
+
+            </header>
+                <hr><br>
+            <form action="connect.php" method="post" onsubmit="exibirAlerta(); return false;">
+                <div>
+                    <label class="nome" for="texto">Nome:</label>
+                    <input type="text" id=texto placeholder="Informe seu nome..." name="nome">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="senha" for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Crie sua senha"name="senha">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="email" for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Informe seu e-mail..."name="email">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="data" for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                    <br><br>
+                <div>
+                    <input type="submit" id="enviar" name="enviar" class="enviar" onclick="coletardados()">
+                </div>   
+                    <hr><br><br><br>
+                        <script>
+                            function coletarDados() {
+                                var texto = document.getElementById('nome').value;
+                                var password = document.getElementById('Senha').value;
+                                var email = document.getElementById('email').value;
+                                var date = document.getElementById('Data de Nascimento').value;
+                            }
+                            function exibirAlerta() {
+                                alert('Formulário enviado com sucesso!');
+                            }
+                        </script>
+                    <footer>
+                        <h3>Fique por dentro dos melhores jogos da atualidade!</h3>
+                    </footer>
+              
+        </main>
+    </div>
+</body>
+</html>
